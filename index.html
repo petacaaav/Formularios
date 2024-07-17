@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Información Personal</title>
+    <title>Formularios Información Personal y Vehículo</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,38 +15,86 @@
 
 <body>
     <div class="container">
-        <form>
-            <h1>Información Personal</h1>
-            <div>
-                <input type="text" placeholder="Ingresa tu nombre" required />
-            </div>
-            <div>
-                <input type="email" placeholder="Ingresa tu correo" />
-            </div>
-            <div>
-                <input type="number" placeholder="Ingresa tu edad" required />
-            </div>
-            <div>
-                <label>
-                    <input type="radio" name="gender" value="M" /> M
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="F" /> F
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="N.A" /> N.A
-                </label>
-            </div>
-            <div>
-                <input type="text" placeholder="Ingresa tu DNI" required />
-            </div>
-            <div>
-                <input type="text" placeholder="Ingresa tu teléfono" required />
-            </div>
-            <div>
-                <input type="submit" value="Submit" />
-            </div>
-        </form>
+        <div class="form-wrapper">
+            <form>
+                <h1>Información Personal</h1>
+                <div>
+                    <input type="text" placeholder="Ingresa tu nombre" required />
+                </div>
+                <div>
+                    <input type="email" placeholder="Ingresa tu correo" />
+                </div>
+                <div>
+                    <input type="number" placeholder="Ingresa tu edad" required />
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="gender" value="M" /> M
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="F" /> F
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="N.A" /> N.A
+                    </label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Ingresa tu DNI" required />
+                </div>
+                <div>
+                    <input type="text" placeholder="Ingresa tu teléfono" required />
+                </div>
+                <div>
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper">
+            <form>
+                <h1>Información del Vehículo</h1>
+                <div>
+                    <label>
+                        <input type="radio" name="transmission" value="Automático" required /> Automático
+                    </label>
+                    <label>
+                        <input type="radio" name="transmission" value="Mecánico" required /> Mecánico
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="features" value="Aire acondicionado" /> Aire acondicionado
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features" value="Asientos de cuero" /> Asientos de cuero
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features" value="GLP" /> GLP
+                    </label>
+                </div>
+                <div>
+                    <select name="color">
+                        <option value="">Selecciona el color</option>
+                        <option value="Blanco perlado">Blanco perlado</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Plata">Plata</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="departamento">
+                        <option value="">Selecciona el departamento</option>
+                        <option value="Ancash">Ancash</option>
+                        <option value="La Libertad">La Libertad</option>
+                        <option value="Lima">Lima</option>
+                        <option value="Cusco">Cusco</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 

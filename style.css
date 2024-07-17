@@ -12,6 +12,13 @@ body {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.form-wrapper {
     width: 300px;
     border: 2px solid white;
     border-radius: 10px;
@@ -38,7 +45,8 @@ form div {
 
 input[type="text"],
 input[type="email"],
-input[type="number"] {
+input[type="number"],
+select {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #777;
@@ -46,7 +54,8 @@ input[type="number"] {
     color: white;
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
     margin-right: 5px;
 }
 
